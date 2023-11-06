@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nebula",
+	"version": "${version}",
+	"name": "nebula",
+	"description": "this is me learning java & making a mod for minecraft",
+	"authors": [
+		"HolyPotato"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nebula/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nebula.mod.Nebula"
+		],
+		"client": [
+			"net.nebula.mod.NebulaModClient"
+		],
+		"fabric-datagen": [
+			"net.nebula.mod.NebulaDataGenerator"
+		]
+	},
+	"mixins": [
+		"nebula.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
